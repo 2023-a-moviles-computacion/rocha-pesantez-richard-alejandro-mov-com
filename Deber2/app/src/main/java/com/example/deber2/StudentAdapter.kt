@@ -22,7 +22,7 @@ class StudentAdapter: RecyclerView.Adapter<StudentAdapter.StudentViewHolder>() {
     }
 
     fun setOnClickDeleteItem(callback: (StudentModel)->Unit){
-        this.onClickItem = callback
+        this.onClickDeleteItem = callback
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = StudentViewHolder(
