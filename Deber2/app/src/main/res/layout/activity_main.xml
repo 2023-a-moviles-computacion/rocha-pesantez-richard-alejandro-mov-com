@@ -52,6 +52,14 @@
             android:text="VIEW"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnUpdate"
+            android:layout_marginStart="8dp"
+            android:text="UPDATE"
+            android:textAllCaps="false" />
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
