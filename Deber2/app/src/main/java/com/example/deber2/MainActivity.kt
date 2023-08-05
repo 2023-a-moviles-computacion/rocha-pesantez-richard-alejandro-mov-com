@@ -32,8 +32,6 @@ class MainActivity : AppCompatActivity() {
         Log.e("pppp","${stdList.size}")
     }
 
-
-
     private fun addStudent(){
         val name = edName.text.toString()
         val email = edEmail.text.toString()
@@ -51,9 +49,7 @@ class MainActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this, "No saved...", Toast.LENGTH_SHORT).show()
             }
-
         }
-
     }
 
     private fun clearEditText(){

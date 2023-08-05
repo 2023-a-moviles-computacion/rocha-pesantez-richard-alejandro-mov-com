@@ -22,14 +22,11 @@ class SQLiteHelper(context: Context) :
 
     }
 
-
     override fun onCreate(db : SQLiteDatabase?){
-        val createTblStudent = ("CREATE TABLE "+ TBL_STUDENT + "(" +
-                ID + "INTEGER PRIMARY KEY,"+ NAME + "TEXT,"+
-                EMAIL + " TEXT"+ ")" )
-
+        val createTblStudent = ("CREATE TABLE " + TBL_STUDENT + "("
+                + ID + " INTEGER PRIMARY KEY," + NAME + " TEXT,"
+                + EMAIL + " TEXT" + ")")
         db?.execSQL(createTblStudent)
-
     }
 
     override fun onUpgrade(db : SQLiteDatabase?, oldVersion: Int, newVersion: Int){
@@ -47,7 +44,6 @@ class SQLiteHelper(context: Context) :
         val sucess = db.insert(TBL_STUDENT, null, contentValues)
         db.close()
         return sucess
-
     }
 
 
@@ -70,7 +66,6 @@ class SQLiteHelper(context: Context) :
         var name: String
         var email: String
 
-
         if(cursor.moveToFirst()){
             do{
                 id = cursor.getInt(cursor.getColumnIndex("id"))
@@ -80,11 +75,8 @@ class SQLiteHelper(context: Context) :
                 stdList.add(std)
             }while (cursor.moveToNext())
         }
-
         return stdList
-
     }
-
 
 
 }
