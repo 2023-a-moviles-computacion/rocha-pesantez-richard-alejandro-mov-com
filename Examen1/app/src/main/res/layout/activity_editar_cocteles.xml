@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editar_cocteles">
+
+    <EditText
+        android:id="@+id/etENombreR"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="480dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarR"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditarR"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/btnEditarR" />
+
+    <EditText
+        android:id="@+id/edEPorciones"
+        android:layout_width="140dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="336dp"
+        android:ems="10"
+        android:hint="@string/Aforo"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditar"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <EditText
+        android:id="@+id/etECalorias"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etENombreR"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR" />
+
+    <ImageButton
+        android:id="@+id/imbERegresarRH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/btnEditarR"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:background="@color/teal_700"
+        android:text="Editar Coctel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/precio"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etECalorias"
+        app:layout_constraintEnd_toEndOf="@+id/etECalorias"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/etECalorias" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Aforo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edEPorciones"
+        app:layout_constraintEnd_toEndOf="@+id/edEPorciones"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edEPorciones" />
+
+    <EditText
+        android:id="@+id/etEIngredientes"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:hint="Ingredientes"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <EditText
+        android:id="@+id/etEFacil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="@string/tieneAlcohol"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <EditText
+        android:id="@+id/etEFechaCreacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Preparacion"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edEPreparacion"
+        app:layout_constraintEnd_toEndOf="@+id/edEPreparacion"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="@+id/edEPreparacion" />
+
+    <EditText
+        android:id="@+id/edEPreparacion"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        android:ems="10"
+        android:hint="Preparacion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombreR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombreR"
+        app:layout_constraintTop_toBottomOf="@+id/etENombreR" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Fecha de creacion"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEFechaCreacion"
+        app:layout_constraintEnd_toEndOf="@+id/etEFechaCreacion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEFechaCreacion" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tieneAlcohol"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEFacil"
+        app:layout_constraintEnd_toEndOf="@+id/etEFacil"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEFacil" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Ingredientes"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEIngredientes"
+        app:layout_constraintEnd_toEndOf="@+id/etEIngredientes"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEIngredientes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

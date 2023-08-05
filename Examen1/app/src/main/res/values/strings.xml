@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Bar-Cocteles</string>
+    <string name="name">Nombre</string>
+    <string name="Aforo">Aforo</string>
+    <string name="area">Area</string>
+    <string name="fechaIntegracion">Fecha de integracion</string>
+    <string name="tieneParqueadero">Tiene parqueadero</string>
+    <string name="cocteles">Cocteles</string>
+    <string name="contenido">Cotenido</string>
+    <string name="precio">Precio</string>
+    <string name="creacion">Fecha de creacion</string>
+    <string name="tieneAlcohol">Tiene alcohol</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="preparacion">Preparacion</string>
+    <string name="title_activity_nuevo_bar">Nuevo_bar</string>
+</resources>

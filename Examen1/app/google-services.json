@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281537177257",
+    "project_id": "recetario-ae980",
+    "storage_bucket": "recetario-ae980.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281537177257:android:4c60c6cd8b9ff2d9c66bb8",
+        "android_client_info": {
+          "package_name": "com.example.recetario"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281537177257-qh4tbcectorvf033mbom691bq1od8as5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7pg_YfYTMviUneVTiQQzhvBzlBIc1k3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281537177257-qh4tbcectorvf033mbom691bq1od8as5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

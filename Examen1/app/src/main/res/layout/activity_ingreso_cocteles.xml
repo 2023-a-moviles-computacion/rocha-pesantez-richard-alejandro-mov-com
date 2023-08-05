@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IngresoCocteles">
+
+    <ImageButton
+        android:id="@+id/imbRegresarV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <EditText
+        android:id="@+id/etIngredientes"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="284dp"
+        android:ems="10"
+        android:hint="Ingredientes"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etPreparacion"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="364dp"
+        android:ems="10"
+        android:hint="Preparacion"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etContenido"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/contenido"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etCalorias"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="56dp"
+        android:ems="10"
+        android:hint="@string/precio"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/etContenido"
+        app:layout_constraintStart_toEndOf="@+id/etContenido"
+        app:layout_constraintTop_toTopOf="@+id/etContenido"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/etCreacion"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="yyyy-mm-dd"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/etContenido"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etContenido"
+        app:layout_constraintTop_toBottomOf="@+id/etContenido" />
+
+    <RadioButton
+        android:id="@+id/rbtSi"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:text="Si"
+        app:layout_constraintEnd_toEndOf="@+id/etCreacion"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/etCreacion"
+        app:layout_constraintTop_toBottomOf="@+id/etCreacion" />
+
+    <RadioButton
+        android:id="@+id/brtNo"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="76dp"
+        android:text="No"
+        app:layout_constraintBottom_toBottomOf="@+id/rbtSi"
+        app:layout_constraintStart_toEndOf="@+id/rbtSi"
+        app:layout_constraintTop_toTopOf="@+id/rbtSi"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tieneAlcohol"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/rbtSi"
+        app:layout_constraintEnd_toEndOf="@+id/rbtSi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rbtSi" />
+
+    <Button
+        android:id="@+id/btnGuardarR"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="448dp"
+        android:background="@color/teal_700"
+        android:text="Guardar Coctel"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etNombre"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombre"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

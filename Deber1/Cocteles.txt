@@ -1,0 +1,7 @@
+{"id":1,"nombre":" Daikiri","creacion":"Aug 15, 2023, 12:00:00 AM","contenidoML":320,"precio":15.55,"esAlcoholica":true,"ingredientes":["ing","ingdos"],"preparacion":"esta es la nueva preparacion"}
+{"id":2,"nombre":"coctelazo","creacion":"May 15, 222, 12:00:00 AM","contenidoML":6546,"precio":65.61,"esAlcoholica":true,"ingredientes":["inge","ingro","ingri","inger"],"preparacion":"esta es la prep"}
+{"id":3,"nombre":"coctel","creacion":"May 15, 2022, 12:00:00 AM","contenidoML":565,"precio":65.65,"esAlcoholica":true,"ingredientes":["ingre","igro","ingri"],"preparacion":"nuevaprepp asasd"}
+{"id":4,"nombre":"coctel","creacion":"May 15, 2002, 12:00:00 AM","contenidoML":65,"precio":1.5,"esAlcoholica":true,"ingredientes":["ingrediente","ingrodiente","ingrata"],"preparacion":"preparacion fabulosa"}
+{"id":5,"nombre":"nombre","creacion":"Aug 15, 2022, 12:00:00 AM","contenidoML":655,"precio":15.35,"esAlcoholica":true,"ingredientes":["ingre","ingro","ingri"],"preparacion":"esta es la prep"}
+{"id":6,"nombre":"Coctel","creacion":"May 15, 2022, 12:00:00 AM","contenidoML":6564,"precio":15.54,"esAlcoholica":true,"ingredientes":[""],"preparacion":"nueva prea"}
+{"id":7,"nombre":"Mojito","creacion":"May 15, 2020, 12:00:00 AM","contenidoML":350,"precio":15.5,"esAlcoholica":true,"ingredientes":["ingre1","ingre2","ingre3","etc"],"preparacion":"mezclar todos los ingredientes en una copa coctelera"}

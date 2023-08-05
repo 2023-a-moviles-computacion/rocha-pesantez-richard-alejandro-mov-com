@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ingreso_bares">
+
+    <EditText
+        android:id="@+id/etFechaIntegracion"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="yyyy-mm-dd"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreC" />
+
+    <RadioButton
+        android:id="@+id/rbtAutorNo"
+        android:layout_width="61dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="276dp"
+        android:text="No"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreC"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="@+id/etNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreC" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="102dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="208dp"
+        android:text="@string/tieneParqueadero"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreC"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="@+id/etNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreC" />
+
+    <RadioButton
+        android:id="@+id/rbtAutorSi"
+        android:layout_width="55dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="116dp"
+        android:text="Si"
+        app:layout_constraintBottom_toBottomOf="@+id/rbtAutorNo"
+        app:layout_constraintEnd_toStartOf="@+id/rbtAutorNo"
+        app:layout_constraintTop_toTopOf="@+id/rbtAutorNo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etArea"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/area"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreC"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreC" />
+
+    <EditText
+        android:id="@+id/etNombreC"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <EditText
+        android:id="@+id/etAforo"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/Aforo"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombreC"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreC" />
+
+    <Button
+        android:id="@+id/btnGuardarC"
+        android:layout_width="103dp"
+        android:layout_height="49dp"
+        android:background="@color/teal_700"
+        android:text="Guardar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <ImageButton
+        android:id="@+id/imbBackCV"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

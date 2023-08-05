@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editar_bar">
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:background="@color/teal_700"
+        android:text="Editar bar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.899" />
+
+    <EditText
+        android:id="@+id/etENombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="404dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditar"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/btnEditar" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etENombre"
+        app:layout_constraintEnd_toEndOf="@+id/etENombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombre" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Fecha de integración"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEFecha"
+        app:layout_constraintEnd_toEndOf="@+id/etEFecha"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEFecha" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tieneParqueadero"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEAutor"
+        app:layout_constraintEnd_toEndOf="@+id/etEAutor"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etEAutor" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/area"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/etEPuntuacion"
+        app:layout_constraintEnd_toEndOf="@+id/etEPuntuacion"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="@+id/etEPuntuacion" />
+
+    <EditText
+        android:id="@+id/edEEdad"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="320dp"
+        android:ems="10"
+        android:hint="@string/Aforo"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditar"
+        app:layout_constraintEnd_toEndOf="@+id/btnEditar"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="@+id/btnEditar" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/Aforo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/edEEdad"
+        app:layout_constraintEnd_toEndOf="@+id/edEEdad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edEEdad" />
+
+    <EditText
+        android:id="@+id/etEPuntuacion"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="@string/area"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombre"
+        app:layout_constraintTop_toBottomOf="@+id/etENombre" />
+
+    <EditText
+        android:id="@+id/etEFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:hint="Fecha"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombre"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="@+id/etENombre"
+        app:layout_constraintTop_toBottomOf="@+id/etENombre" />
+
+    <EditText
+        android:id="@+id/etEAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="304dp"
+        android:ems="10"
+        android:hint="@string/tieneParqueadero"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etENombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etENombre"
+        app:layout_constraintTop_toBottomOf="@+id/etENombre" />
+
+    <ImageButton
+        android:id="@+id/imbERegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

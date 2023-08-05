@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvAutor"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/bordered_text_bg"
+        android:hint="Si/No"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas" />
+
+    <TextView
+        android:id="@+id/tvCostumerScore"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/bordered_text_bg"
+        android:hint="@string/area"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tieneParqueadero"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Aforo"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/tvEdad"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/bordered_text_bg"
+        android:hint="@string/Aforo"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de integración"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/tvFechaCreacion"
+        android:layout_width="167dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/bordered_text_bg"
+        android:text="Fecha integracion"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/tvNombreC"
+        android:layout_width="325dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="236dp"
+        android:background="@drawable/bordered_text_bg"
+        android:text="Nombre Bar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRecetas"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas" />
+
+    <TextView
+        android:id="@+id/tvRecetas"
+        android:layout_width="325dp"
+        android:layout_height="146dp"
+        android:background="@drawable/bordered_text_bg"
+        android:hint="@string/cocteles"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cocteles"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="175dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/teal_700"
+        android:text="Siguiente Bar ->"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvRecetas"
+        app:layout_constraintStart_toStartOf="@+id/tvRecetas"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecetas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
