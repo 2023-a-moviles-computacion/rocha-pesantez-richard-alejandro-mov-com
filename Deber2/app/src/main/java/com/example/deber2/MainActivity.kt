@@ -90,6 +90,7 @@ class MainActivity : AppCompatActivity() {
             val std= StudentModel(name=name, email = email)
             val status = sqliteHelper.insertStudent(std)
 
+            
             //check insert sucess or not
             if(status > -1){
                 Toast.makeText(this, "Student Added...", Toast.LENGTH_SHORT).show()
