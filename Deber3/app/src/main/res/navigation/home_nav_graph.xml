@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.canhtv.ee.newsapp.ui.home.ExploreFragment"
+        tools:layout="@layout/fragment_explore"
+        android:label="fragment_explore" />
+    <fragment
+        android:id="@+id/headlineFragment"
+        android:name="com.canhtv.ee.newsapp.ui.home.HeadlineFragment"
+        tools:layout="@layout/fragment_headline"
+        android:label="fragment_headline" />
+    <fragment
+        android:id="@+id/mediatorFragment"
+        android:name="com.canhtv.ee.newsapp.ui.home.Mediator"
+        android:label="fragment_following"
+        tools:layout="@layout/fragment_mediator"/>
+
+</navigation>

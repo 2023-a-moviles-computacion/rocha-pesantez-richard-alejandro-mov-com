@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/appToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    style="@style/MyTheme.Toolbar"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/toolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_on_primary"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        />
+</com.google.android.material.appbar.MaterialToolbar>

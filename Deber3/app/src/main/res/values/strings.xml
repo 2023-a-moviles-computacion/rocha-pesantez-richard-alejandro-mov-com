@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="explore">Explore</string>
+    <string name="headline">Headline</string>
+    <string name="mediator">Mediator</string>
+
+    <string name="webview_save">Save</string>
+    <string name="webview_share">Share</string>
+    <string name="webview_refresh">Refresh</string>
+
+    <string name="outer_item_icon_forward">Forward</string>
+
+</resources>
